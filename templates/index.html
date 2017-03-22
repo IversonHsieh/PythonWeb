@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>
+		Welcome my blog.
+	</title>
+</head>
+<body>
+	<h1> Welcome my blog </h1>
+	<hr>
+	{% for post in posts %}
+		<p style='font-family:;font-size:16pt;font-weight:bold;'>
+			{{post.title}}
+		</p>
+		<p style='font-family:;font-size:10pt;letter-spacing:1pt;'>
+		{{post.body}}
+		</p>
+	{% endfor %}
+	<hr>
+	<h3> Current time : {{ now }}</h3>
+</body>
+</html>
+
+
